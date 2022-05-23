@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{106AE4E4-FEED-4217-9439-15ADAFC588FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmartQuarantinee</RootNamespace>
+    <AssemblyName>SmartQuarantinee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bathroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bathroom.Designer.cs">
+      <DependentUpon>Bathroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bedroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bedroom.Designer.cs">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cafeRestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cafeRestaurant.Designer.cs">
+      <DependentUpon>cafeRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee.Designer.cs">
+      <DependentUpon>Coffee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elderly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elderly.Designer.cs">
+      <DependentUpon>Elderly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrance.Designer.cs">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glika.Designer.cs">
+      <DependentUpon>Glika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeSystem.Designer.cs">
+      <DependentUpon>HomeSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kalathi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kalathi.Designer.cs">
+      <DependentUpon>Kalathi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitcen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitcen.Designer.cs">
+      <DependentUpon>Kitcen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="livingroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="livingroom.Designer.cs">
+      <DependentUpon>livingroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maps.Designer.cs">
+      <DependentUpon>maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Onoff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Onoff.Designer.cs">
+      <DependentUpon>Onoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paggos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paggos.Designer.cs">
+      <DependentUpon>paggos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rofimata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rofimata.Designer.cs">
+      <DependentUpon>Rofimata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS.Designer.cs">
+      <DependentUpon>SMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coffeeS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coffeeS.Designer.cs">
+      <DependentUpon>coffeeS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thermometro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thermometro.Designer.cs">
+      <DependentUpon>Thermometro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tost.Designer.cs">
+      <DependentUpon>Tost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trofima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trofima.Designer.cs">
+      <DependentUpon>Trofima.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bathroom.resx">
+      <DependentUpon>Bathroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bedroom.resx">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cafeRestaurant.resx">
+      <DependentUpon>cafeRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffee.resx">
+      <DependentUpon>Coffee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elderly.resx">
+      <DependentUpon>Elderly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrance.resx">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glika.resx">
+      <DependentUpon>Glika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeSystem.resx">
+      <DependentUpon>HomeSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kalathi.resx">
+      <DependentUpon>Kalathi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitcen.resx">
+      <DependentUpon>Kitcen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="livingroom.resx">
+      <DependentUpon>livingroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maps.resx">
+      <DependentUpon>maps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Onoff.resx">
+      <DependentUpon>Onoff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paggos.resx">
+      <DependentUpon>paggos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rofimata.resx">
+      <DependentUpon>Rofimata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS.resx">
+      <DependentUpon>SMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coffeeS.resx">
+      <DependentUpon>coffeeS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thermometro.resx">
+      <DependentUpon>Thermometro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tost.resx">
+      <DependentUpon>Tost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trofima.resx">
+      <DependentUpon>Trofima.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ec91dfe8-1d70-4b38-818a-c8a605f1597d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2019-ncov-quarantine-sad-woman-protective-mask-phone-screen-remote-work-concept-coronavirus-panic-lovers-apart-isolated-sick-person-illustration_176448-142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SideVector_EmailProtection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smsS-13033.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smsS-130331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smsS-130332.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2019-ncov-quarantine-set-two-sad-women-protective-mask_176448-145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anapsiktika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cappuccino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellinikos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espresso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallikos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\granita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macchiato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpires.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smoothies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sokolata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ximoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fddelivery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krepaAlm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandwich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheesecake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donuts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soufle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waffles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krepesGl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onoff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banioOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domatiokids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domatiokidsOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domatiokurio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domatiokurioOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kathistiko.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kathistikoOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kouzina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kouzinaOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RdioOff.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RdioOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometroOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometroOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tvOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tvOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elderly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeSystem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pistolaki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalorifer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrastiras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kafetieraOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kafetieraOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermosifonasOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermosifonasOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrastirasOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrastirasOn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eisidos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eisidosOff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebeans.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebean.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kafetiera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kafetieraOf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrastiras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrastirasof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitrino.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kokkino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portokali.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
